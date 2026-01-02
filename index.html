@@ -1,10 +1,311 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>M.K. Traders</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M.K. Traders | Complete Interior Solutions in Hisar</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="M.K. Traders provides complete interior solutions in Hisar, Haryana including modular kitchens, wardrobes, furniture, flooring, and commercial contracts." />
+  <meta name="keywords" content="Interior work Hisar, Modular Kitchen Hisar, Interior Contractor Haryana, M.K. Traders" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      background: #1f1f1f;
+      color: #fff;
+      padding: 15px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      margin-left: 25px;
+      font-size: 0.95rem;
+      color: #ddd;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #f4c430;
+    }
+
+    /* ---------- HERO SECTION ---------- */
+    .hero {
+      min-height: 90vh;
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+                  url('images/hero.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 0 8%;
+      color: #fff;
+    }
+
+    .hero-content {
+      max-width: 650px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero-content h2 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      line-height: 1.2;
+    }
+
+    .hero-content span {
+      color: #f4c430;
+    }
+
+    .hero-content p {
+      font-size: 1.05rem;
+      margin-bottom: 30px;
+      color: #eee;
+    }
+
+    .btn-group a {
+      display: inline-block;
+      padding: 12px 26px;
+      margin-right: 15px;
+      border-radius: 30px;
+      font-size: 0.95rem;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #f4c430;
+      color: #000;
+    }
+
+    .btn-primary:hover {
+      background: #ddb120;
+    }
+
+    .btn-outline {
+      border: 1.5px solid #fff;
+      color: #fff;
+    }
+
+    .btn-outline:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    /* ---------- SERVICES ---------- */
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h3 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .service-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .service-box:hover {
+      transform: translateY(-8px);
+    }
+
+    .service-box h4 {
+      margin-bottom: 10px;
+      color: #1f1f1f;
+    }
+
+    .service-box p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* ---------- WHY US ---------- */
+    .why-us {
+      background: #1f1f1f;
+      color: #fff;
+      text-align: center;
+    }
+
+    .why-us-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .why-box {
+      background: #2c2c2c;
+      padding: 25px;
+      border-radius: 10px;
+    }
+
+    /* ---------- CTA ---------- */
+    .cta {
+      text-align: center;
+      background: #f4c430;
+      padding: 60px 8%;
+    }
+
+    .cta h3 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      margin-bottom: 25px;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>M.K. Traders</h1>
-  <p>Website is live.</p>
+
+  <!-- HEADER -->
+  <header>
+    <h1>M.K. Traders</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="interior-services.html">Interior Services</a>
+      <a href="appliances.html">Appliances</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Complete <span>Interior Solutions</span><br>in Hisar, Haryana</h2>
+      <p>
+        We specialize in modular kitchens, furniture, woodwork, flooring,
+        and complete residential, commercial & government interior execution.
+      </p>
+      <div class="btn-group">
+        <a href="contact.html" class="btn-primary">Get Site Visit</a>
+        <a href="tel:+91XXXXXXXXXX" class="btn-outline">Call Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section>
+    <div class="section-title">
+      <h3>Our Expertise</h3>
+      <p>End-to-end interior execution with quality materials & skilled workmanship</p>
+    </div>
+
+    <div class="services">
+      <div class="service-box">
+        <h4>Residential Interiors</h4>
+        <p>Modular kitchens, wardrobes, beds, sofas, wall paneling and complete home interiors.</p>
+      </div>
+
+      <div class="service-box">
+        <h4>Commercial & Contracts</h4>
+        <p>Office interiors, corporate fit-outs, institutional and government interior contracts.</p>
+      </div>
+
+      <div class="service-box">
+        <h4>Woodwork & Flooring</h4>
+        <p>Custom woodwork, wooden flooring, paneling and durable finishing solutions.</p>
+      </div>
+
+      <div class="service-box">
+        <h4>Kitchen Appliances</h4>
+        <p>Multi-brand chimneys, hobs, microwaves & dishwashers with installation support.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why-us">
+    <div class="section-title">
+      <h3>Why Choose M.K. Traders</h3>
+      <p>Local expertise you can trust</p>
+    </div>
+
+    <div class="why-us-items">
+      <div class="why-box">✔ Hisar-based local firm</div>
+      <div class="why-box">✔ Custom & site-specific work</div>
+      <div class="why-box">✔ Experienced craftsmen</div>
+      <div class="why-box">✔ Residential + Government experience</div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h3>Looking to Upgrade Your Space?</h3>
+    <p>Contact us today for consultation, site visit and quotation.</p>
+    <a href="contact.html" class="btn-primary">Contact M.K. Traders</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 M.K. Traders | Interior & Modular Solutions | Hisar, Haryana
+  </footer>
+
 </body>
 </html>
